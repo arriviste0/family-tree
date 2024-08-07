@@ -53,11 +53,12 @@ export default function Sidebar({ children }) {
   )
 }
 
-export function SidebarItem({ icon, text, active, alert }) {
+export function SidebarItem({ click, icon, text, active, alert }) {
   const { expanded } = useContext(SidebarContext)
   
   return (
-    <li
+    <button
+    onClick={click}
       className={`
         relative flex items-center py-2 px-3 my-1
         font-medium rounded-md cursor-pointer
@@ -97,6 +98,6 @@ export function SidebarItem({ icon, text, active, alert }) {
           {text}
         </div>
       )}
-    </li>
+    </button>
   )
 }

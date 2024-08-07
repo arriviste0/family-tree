@@ -1,19 +1,25 @@
 import React from 'react';
-import Navbar from "./Navbar";
-import Tree from './Tree';
-import Sidebar, { SidebarItem } from './Sidebar';
-import {LayoutDashboard, BarChart3,UserCircle, Boxes,Package,Receipt,Settings,LifeBuoy} from  "lucide-react";
-import Canvas from "./Canvas";
+import Navbar from "./components/Navbar";
+// import Sidebar, { SidebarItem } from './components/Sidebar';
+// import {LayoutDashboard, BarChart3,UserCircle, Boxes,Package,Receipt,Settings,LifeBuoy} from  "lucide-react";
+import Canvas from "./components/Canvas";
+// import { Dialog } from '@headlessui/react';
+import Dialogbox from './components/Dialogbox';
+// import Dialogbox from './components/Dialogbox';
+// import {MessageDialog} from "./Dialog"
+
 
 function App() {
   return (
-<>
+ <>
     <div>
       <Navbar />
     </div>
 
     <div className='items-center justify-left flex'>
-<Sidebar>
+
+      <Dialogbox />
+{/* <Sidebar>
 
 <SidebarItem
 
@@ -42,11 +48,11 @@ alert
 
 <SidebarItem icon={<LifeBuoy size={20} />} text="Help" />
 
-</Sidebar>
-<Canvas canvasHeight={1080} canvasWidth={1920} />
+</Sidebar>  */}
+
+<div style={{ height: 1080 , width: 1920 }}>
+<Canvas/>
 </div>
-<div className='items-left justify-left flex'>
-<Tree />
 </div>
     </>
 

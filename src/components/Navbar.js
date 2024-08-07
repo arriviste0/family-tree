@@ -59,7 +59,7 @@ export default function Navabar() {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <PopoverGroup className="hidden lg:flex lg:gap-x-12">
+        {/* <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
             <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
               Product
@@ -113,7 +113,7 @@ export default function Navabar() {
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
             Company
           </a>
-        </PopoverGroup>
+        </PopoverGroup> */}
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
             Log in <span aria-hidden="true">&rarr;</span>
@@ -143,7 +143,7 @@ export default function Navabar() {
           </div>
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
-              <div className="space-y-2 py-6">
+              {/* <div className="space-y-2 py-6">
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
@@ -187,7 +187,7 @@ export default function Navabar() {
                 >
                   Company
                 </a>
-              </div>
+              </div> */}
               <div className="py-6">
                 <a
                   href="#"
